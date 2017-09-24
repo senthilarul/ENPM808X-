@@ -1,3 +1,10 @@
+/**
+ * @file    main.cpp
+ * @author  Senthil Hariharan Arul
+ * @copyright 
+ * @brief main function for running gtest.
+ */
+
 #include <gtest/gtest.h>
 
 int main(int argc, char** argv) {
