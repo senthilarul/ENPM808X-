@@ -1,6 +1,6 @@
 # ENPM808X PID Controller
-[![Build Status](https://travis-ci.org/senthilarul/cpp-boilerplate.svg?branch=master)](https://travis-ci.org/senthilarul/cpp-boilerplate)
-[![Coverage Status](https://coveralls.io/repos/github/senthilarul/cpp-boilerplate/badge.svg?branch=master)](https://coveralls.io/github/senthilarul/cpp-boilerplate?branch=master)
+[![Build Status](https://travis-ci.org/senthilarul/ENPM808X-.svg?branch=master)](https://travis-ci.org/senthilarul/ENPM808X-)
+[![Coverage Status](https://coveralls.io/repos/github/senthilarul/ENPM808X-/badge.svg?branch=master)](https://coveralls.io/github/senthilarul/ENPM808X-?branch=master)
 ---
 
 ## Overview
