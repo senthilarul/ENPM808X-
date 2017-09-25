@@ -1,6 +1,6 @@
 # ENPM808X PID Controller
-[![Build Status](https://travis-ci.org/senthilarul/ENPM808X-.svg?branch=master)](https://travis-ci.org/senthilarul/ENPM808X-)
-[![Coverage Status](https://coveralls.io/repos/github/senthilarul/ENPM808X-/badge.svg?branch=master)](https://coveralls.io/github/senthilarul/ENPM808X-?branch=master)
+[![Build Status](https://travis-ci.org/senthilarul/ENPM808X-PIDcontroller.svg?branch=master)](https://travis-ci.org/senthilarul/ENPM808X-PIDcontroller)
+[![Coverage Status](https://coveralls.io/repos/github/senthilarul/ENPM808X-PIDcontroller/badge.svg?branch=master)](https://coveralls.io/github/senthilarul/ENPM808X-PIDcontroller?branch=master)
 ---
 
 ## Overview
