@@ -1,11 +1,11 @@
-# C++ Boilerplate
+# ENPM808X PID Controller
 [![Build Status](https://travis-ci.org/senthilarul/cpp-boilerplate.svg?branch=master)](https://travis-ci.org/senthilarul/cpp-boilerplate)
 [![Coverage Status](https://coveralls.io/repos/github/senthilarul/cpp-boilerplate/badge.svg?branch=master)](https://coveralls.io/github/senthilarul/cpp-boilerplate?branch=master)
 ---
 
 ## Overview
 
-Simple starter C++ project with:
+Simple C++ PID Controller implementation project with:
 
 - cmake
 - googletest
