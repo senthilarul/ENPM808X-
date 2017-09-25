@@ -1,0 +1,8 @@
+./include/PIDController.hpp:29:  Lines should be <= 80 characters long  [whitespace/line_length] [2]
+Done processing ./include/PIDController.hpp
+Done processing ./test/main.cpp
+Done processing ./test/test.cpp
+Done processing ./app/main.cpp
+Done processing ./app/PIDController.cpp
+Total errors found: 1
+
