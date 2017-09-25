@@ -1,3 +1,4 @@
+
 /**
  * @file    PIDController.cpp
  * @author  Senthil Hariharan Arul
@@ -8,8 +9,6 @@
 #include "PIDController.hpp"
 #include <iostream>
 #include <cmath>
-#include <chrono>
-#include <thread>
 
 /**
  * @brief Constructor PIDController
@@ -24,78 +23,75 @@ PIDController::PIDController(double kp, double ki, double kd, double aVel) {
     kProportional = kp;
     kIntegral = ki;
     kDerivative = kd;
-    actualVelocity  = aVel;
+    actualVelocity = aVel;
+    error = 0;
+    newVelocity = 0;
 }
 
 /**
  * @brief function getProportional
  * @return kProportional of type double
- * The following function getProportional return the value of proportional 
+ * The following function getProportional return the value of proportional
  * gain.
  */
 auto PIDController::getProportional() -> double {
-    return kProportional; 
+    // Return K proportional value
+    return kProportional;
 }
 
 /** 
  * @brief function getIntegral
  * @return kIntegral of type double
- * The following function getIntegral return the value of Integral 
+ * The following function getIntegral return the value of Integral
  * gain.
  */
 auto PIDController::getIntegral() -> double {
-    return kIntegral; 
+    // Return K integral value
+    return kIntegral;
 }
 
 /**
  * @brief function getDerivative
  * @return kDerivative of type double
- * The following function getDerivative return the value of derivative 
+ * The following function getDerivative return the value of derivative
  * gain.
  */
 auto PIDController::getDerivative() -> double {
-    return kDerivative; 
+    // Return K derivative value
+    return kDerivative;
 }
 
-/** 
+/**
  * @brief function tuneController
  * @return newVelocity of type double
- * The following function getProportional return the value of proportional 
+ * The following function getProportional return the value of proportional
  * gain.
  */
 auto PIDController::tuneController() -> double {
-    double kp = getProportional();
-    double ki = getIntegral();
-    double kd = getDerivative();
-    std::cout << kp <<" "<< ki<<" "<<kd<<"\t";
-    double loopCounter=0;
-    while ( std::abs(calculateError()) > errorThreshold ) {
-    loopCounter++;
-    error = calculateError();
-    std::cout << "error: "<< error <<std::endl;
-    totalError += error;
-    std::cout << kp * error << " "<< ki * totalError *dTime << " "<< ((error - previousError)/dTime) * kd << std::endl;
-    double newVel = kp * error + ki * totalError *dTime + ((error - previousError)/dTime) * kd;
-    previousError = error;
-    newVelocity = (newVel > max) ? max : newVel < min ? min : newVel;
-    actualVelocity = newVelocity;
-    //std::this_thread::sleep_for (std::chrono::seconds(1));
-    }
-    std::cout << "new velocity now is" << newVelocity <<"error"<<std::abs(calculateError());
-return newVelocity;
+    // Get the values of Kp,Ki and Kd from respective functions
+
+    // Write while loop to calculate new velocity using PID until the new
+
+    // velocity converges to setpoint within the error threshold limit.
+
+    // Limit the PID output to max and min values if it exceed them
+    return 12.7;
 }
 
-/** 
+/**
  * @brief function calculateError
  * @return error of type double
  * Calculate the error between setpoint and actual velocity.
  */
 auto PIDController::calculateError() -> double {
-    error = setPoint - actualVelocity;
-    return error;
+    // Calculate error between setpoint and actual velocity
+    // Return error
+    return 10;
 }
-/** 
+
+/**
  * @brief destructor for class PIDController
  */
 PIDController::~PIDController() {
 }
+
