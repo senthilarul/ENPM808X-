@@ -2,7 +2,7 @@
  * @file    main.cpp
  * @author  Senthil Hariharan Arul
  * @copyright GNU Public License
- * @brief Calls the function to tune controller.
+ * @brief Calls the function to tune controller
  */
 
 #include <iostream>
