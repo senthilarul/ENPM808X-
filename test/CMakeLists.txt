@@ -4,7 +4,6 @@ add_executable(
     cpp-test
     main.cpp
     test.cpp
-    ../app/PIDController.cpp
 )
 
 target_include_directories(cpp-test PUBLIC ../vendor/googletest/googletest/include 
