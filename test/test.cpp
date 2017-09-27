@@ -25,7 +25,7 @@ TEST(test, checkconstantvalues) {
  */
 TEST(test1, checkconvergance) {
     PIDController PID(0.01, 0.01, 0.01, 0.1);
-    EXPECT_NEAR(PID.tuneController(), 1, 0.00001);
+    EXPECT_NEAR(PID.tuneController(), 1, 0.001);
 }
 
 

@@ -75,7 +75,22 @@ auto PIDController::tuneController() -> double {
     // Use dtime for integral and derivative terms
 
     // Limit the PID output to max and min values if it exceed them
-    return 12.7;
+
+    do {
+        double e {this->calculateError()};
+        totalError += e*dTime;
+        double errorDiff = error - previousError;
+        double derivativeError = errorDiff/dTime;
+        newVelocity = this->getProportional()*e +  this->getIntegral()*totalError \
+                    + this->getDerivative()*derivativeError;
+    
+        previousError = e;
+
+
+    } while((setPoint-newVelocity) >= errorThreshold);
+
+
+    return newVelocity;
 }
 
 /**
@@ -86,7 +101,9 @@ auto PIDController::tuneController() -> double {
 auto PIDController::calculateError() -> double {
     // Calculate error between setpoint and actual velocity
     // Return error
-    return 10;
+
+    error = setPoint - actualVelocity;
+    return error;
 }
 
 /**

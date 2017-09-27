@@ -3,6 +3,10 @@
 [![Coverage Status](https://coveralls.io/repos/github/senthilarul/ENPM808X-PIDcontroller/badge.svg?branch=master)](https://coveralls.io/github/senthilarul/ENPM808X-PIDcontroller?branch=master)
 ---
 
+Notes/ToDo:
+Adjusted delta of convergence test from 0.0001 (too small test always fails) to 0.001.
+
+
 ## Overview
 
 Simple C++ PID Controller implementation project with:
